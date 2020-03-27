@@ -7,8 +7,17 @@ public class Main {
 
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(Config.class);
 
-        Parent parentBean = applicationContext.getBean(Parent.class);
+       // Parent parentBean = applicationContext.getBean(Parent.class);
 
+       // parentBean.setName("Shrek");
+
+        Middle middleBean = applicationContext.getBean(Middle.class);
+
+        Child childBean = applicationContext.getBean(Child.class);
+
+        System.out.println(middleBean.getParent().getName());
+
+        System.out.println(childBean.getMiddle().getParent().getName());
     }
 
 }

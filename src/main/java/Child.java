@@ -8,4 +8,8 @@ public class Child {
         this.middle = middle;
     }
 
+    public Middle getMiddle() {
+        return middle;
+    }
+
 }

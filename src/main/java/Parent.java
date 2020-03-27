@@ -1,6 +1,6 @@
 public class Parent {
 
-    private String name;
+    private String name = "Shrek";
 
     public String getName() { return this.name; }
 
