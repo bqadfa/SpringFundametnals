@@ -1,5 +1,6 @@
 package model;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -12,7 +13,7 @@ public class Middle {
         this.parent = parent;
     }
 
-
+    @Autowired
     public void setParent(Parent parent) {
         this.parent = parent;
     }
