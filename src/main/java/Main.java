@@ -1,3 +1,6 @@
+import model.Child;
+import model.Config;
+import model.Middle;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -7,7 +10,7 @@ public class Main {
 
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(Config.class);
 
-       // Parent parentBean = applicationContext.getBean(Parent.class);
+       // model.Parent parentBean = applicationContext.getBean(model.Parent.class);
 
        // parentBean.setName("Shrek");
 
