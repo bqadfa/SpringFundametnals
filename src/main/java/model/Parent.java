@@ -5,10 +5,10 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
-//@Qualifier(value = "model.Parent")
 public class Parent {
 
     private String name = "Shrek";
+
 
     public String getName() { return this.name; }
 

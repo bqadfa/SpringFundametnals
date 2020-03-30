@@ -18,9 +18,9 @@ public class Main {
 
         Child childBean = applicationContext.getBean(Child.class);
 
-        System.out.println(middleBean.getParent().getName());
+        System.out.println(middleBean.getParentOfMiddle().getName());
 
-        System.out.println(childBean.getMiddle().getParent().getName());
+        System.out.println(childBean.getMiddle().getParentOfMiddle().getName());
     }
 
 }
